@@ -65,7 +65,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     box-sizing: border-box;
-
+    width: 100%;
 }
 textarea {
     resize: vertical; /* Permet à l'utilisateur de redimensionner verticalement la zone de texte */
