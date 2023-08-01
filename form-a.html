@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان العملاء</title>
+    <link rel="stylesheet" href="style-a.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="./img/Logo_NAF.png" alt="صورتك"><br>شركة نفطال مديرية الزفت
+        <h1>شركة نفطال </h1>
+        <h1>رضاكم هو أولويتنا </h1>
+
+        <form id="questionnaireForm" method="post">
+            <fieldset>
+                <legend>معلومات عامة</legend>
+                <label for="natureEntreprise">من أنت:</label><br>
+                <input type="checkbox" name="secteurActivite" value="travauxPublics"> المالك<br>
+                <input type="checkbox" name="secteurActivite" value="travauxPublics"> المدير<br>
+                <input type="checkbox" name="secteurActivite" value="sousTraitance"> المسؤول التجاري<br>
+                <input type="checkbox" name="secteurActivite" value="autre"> آخر (يرجى التحديد) <input type="text"
+                    name="autreSecteurActivite"><br>
+
+                <br>
+
+                <label>تمثل الشركة :</label>
+                <label for="Entreprise"></label>
+                <input type="text" name="autreperson"> <br>
+
+                <br>
+                <label for="natureEntreprise">ما هو الوضع القانوني لشركتك :</label><br>
+                <input type="radio" name="natureEntreprise" value="etatique"> حكومية<br>
+                <input type="radio" name="natureEntreprise" value="privee"> خاصة<br>
+
+                <br>
+
+                <label for="tempsEntreprise">منذ متى أنت عميل لشركتنا؟</label><br>
+                <input type="radio" name="tempsEntreprise" value="trois"> أقل من 3 سنوات<br>
+                <input type="radio" name="tempsEntreprise" value="plus_trois"> بين 3 سنوات و 5 سنوات<br>
+                <input type="radio" name="tempsEntreprise" value="cinq"> بين 5 سنوات و 10 سنوات<br>
+                <input type="radio" name="tempsEntreprise" value="dix"> أكثر من 10 سنوات<br>
+                <br>
+                <label for="paiement">كيف تقوم بالدفع:</label><br>
+                <input type="radio" name="paiement" value="etatique"> الى أجل<br>
+                <input type="radio" name="paiement" value="privee"> نقدًا<br>
+
+                <br>
+                <label for="secteurActivite">ما هو قطاع نشاط شركتك:</label><br>
+                <input type="checkbox" name="secteurActivite" value="travauxPublics"> أعمال عامة<br>
+                <input type="checkbox" name="secteurActivite" value="sousTraitance"> تحت الاستعمال<br>
+                <input type="checkbox" name="secteurActivite" value="Rev"> موزع<br>
+                <input type="checkbox" name="secteurActivite" value="autre"> آخر (يرجى التحديد) <input type="text"
+                    name="autreSecteurActivite1"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>المعرفة بالمنتجات</legend>
+                <label for="familiariteProduits">هل أنت على دراية بمنتوجاتنا من الزفت؟</label><br>
+                <input type="radio" name="familiariteProduits" value="tresFamilier"> نعم، على دراية كاملة<br>
+                <input type="radio" name="familiariteProduits" value="besoinInformations"> نعم، لكنني بحاجة إلى مزيد من
+                المعلومات<br>
+                <input type="radio" name="familiariteProduits" value="pasFamilier"> لا، لست على دراية تامة<br>
+
+                <br>
+
+                <label for="utilisationProduits">هل استخدمت منتجات الزفت الخاصة بنا من قبل ؟</label><br>
+                <input type="radio" name="utilisationProduits" value="regulierement"> نعم، بانتظام<br>
+                <input type="radio" name="utilisationProduits" value="occasionnellement"> نعم، بشكل عرضي<br>
+                <input type="radio" name="utilisationProduits" value="pasEncore"> لا، لم أستخدمها بعد<br>
+
+                <br>
+
+                <label for="choixProduits">ما هي العوامل الأكثر أهمية بالنسبة لك عند شراء الزفت ؟</label><br>
+                <input type="checkbox" name="choixProduits" value="1"> 1 الجودة<br>
+                <input type="checkbox" name="choixProduits" value="2"> 2 السعر<br>
+                <input type="checkbox" name="choixProduits" value="3"> 3 التوفر<br>
+                <input type="checkbox" name="choixProduits" value="4"> 4 خدمة العملاء<br>
+                <input type="checkbox" name="choixProduits" value="5"> 5 النقل<br>
+            </fieldset>
+            <fieldset>
+                <legend>الرضا والتفضيلات بشأن المنتجات</legend>
+                <label for="gammePreferee">من بين منتوجاتنا اي نوع من الزفت تفضله أكثر ؟</label><br>
+                <select name="gammePreferee">
+                    <option value="gammeA">بيتوم نقي 40/50</option>
+                    <option value="gammeB">كت باك</option>
+                    <option value="gammeC">BMP</option>
+                    <option value="gammeD">مستحلب الزفت </option>
+                    <option value="autre">آخر (يرجى التحديد)</option>
+                </select>
+                <input type="text" name="autreGammePreferee2"><br>
+
+                <br>
+
+                <label for="satisfactionProduits">على مقياس من 1 إلى 4، إلى أي مدى أنت راضٍ عن منتجاتنا من الزفت من حيث الجودة؟</label><br>
+                <input type="radio" name="satisfactionProduits" value="1"> 1 (غير راضٍ على الإطلاق)<br>
+                <input type="radio" name="satisfactionProduits" value="2"> 2 (غير راضٍ قليلاً)<br>
+                <input type="radio" name="satisfactionProduits" value="4"> 3 (راضٍ)<br>
+                <input type="radio" name="satisfactionProduits" value="5"> 4 (راضٍ جداً)<br>
+
+
+                <label for="satisfactionProduits1"></label><br>هل أنت راضٍ عن جودة الاستقبال وسرعة الخدمة؟</label><br>
+                <input type="radio" name="satisfactionProduits1" value="1"> 1 (غير راضٍ على الإطلاق)<br>
+                <input type="radio" name="satisfactionProduits1" value="2"> 2 (غير راضٍ قليلاً)<br>
+                <input type="radio" name="satisfactionProduits1" value="4"> 3 (راضٍ)<br>
+                <input type="radio" name="satisfactionProduits1" value="5"> 4 (راضٍ جداً)<br>
+
+                <label for="TransportProduits1"></label><br>ما رأيك في مواعيد التسليم لدينا؟</label><br>
+                <input type="radio" name="TransportProduits1" value="1"> 1 (بطيء جدًا)<br>
+                <input type="radio" name="TransportProduits1" value="2"> 2 (بطيء)<br>
+                <input type="radio" name="TransportProduits1" value="4"> 3 (سريع)<br>
+                <input type="radio" name="TransportProduits1" value="5"> 4 (ممتاز)<br>
+
+
+                <label for="qualiteProduits1"><br>هل واجهت بالفعل مشاكل في الجودة أو عدم تطابق منتوجاتنا مع المعايير الدولية؟</label><br>
+                <input type="radio" name="qualiteProduits1" value="1"> 1 نعم<br>
+                <input type="radio" name="qualiteProduits1" value="2"> 2 لا<br>
+            </fieldset>
+            <fieldset>
+                <Legend for="TransportProduits1">أسعار NAFTAL</Legend>
+                <label for="prixcProduits1">ما رأيك في الأسعار المعروضة "نقدًا"؟</label><br>
+                <input type="radio" name="prixcProduits2" value="1"> 1 (غير راضٍ على الإطلاق)<br>
+                <input type="radio" name="prixcProduits2" value="2"> 2 (غير راضٍ قليلاً)<br>
+                <input type="radio" name="prixcProduits2" value="4"> 3 (راضٍ)<br>
+                <input type="radio" name="prixcProduits2" value="5"> 4 (راضٍ جداً)<br>
+                <br>
+                <label for="prixtProduits2">ما رأيك في الأسعار المعروضة "الى اجل"؟</label><br>
+                <input type="radio" name="prixtProduits2" value="1"> 1 (غير راضٍ على الإطلاق)<br>
+                <input type="radio" name="prixtProduits2" value="2"> 2 (غير راضٍ قليلاً)<br>
+                <input type="radio" name="prixtProduits2" value="4"> 3 (راضٍ)<br>
+                <input type="radio" name="prixtProduits2" value="5"> 4 (راضٍ جداً)<br>
+
+            </fieldset>
+
+            <fieldset>
+                <Legend for="TransportProduits1">مزايا تجارية</Legend>
+                <label for="satisfactionProduits2">ما هي توقعاتك بشأن برنامج الولاء؟</label><br>
+                <input type="radio" name="satisfactionProduits2" value="1"> 1 تخفيضات على سعر الشراء حسب الكمية<br>
+                <input type="radio" name="satisfactionProduits2" value="2"> 2 مكافأة تمنح في نهاية العام حسب الكمية المأخوذة خلال العام السابق<br>
+                <input type="radio" name="satisfactionProduits2" value="3"> 3 دعوات  لحضور أحداث حصرية<br>
+                <input type="radio" name="satisfactionProduits2" value="4"> 4 خدمات مجانية (النقل...)<br>
+                <input type="radio" name="satisfactionProduits2" value="autre"> 5 آخر (يرجى التحديد) <input type="text"
+                name="satisfactionProduits3"><br>
+
+                <label for="remiseProduits1"><br>هل تستفيد من تخفيض على سعر البيع؟</label><br>
+                <input type="radio" name="remiseProduits1" value="1"> 1 نعم<br>
+                <input type="radio" name="remiseProduits1" value="2"> 2 لا<br>
+                <input type="radio" name="remiseProduits1" value="3"> 3 لا، تم تعليق خصمي<br>
+
+                <br>
+
+                <label for="prixtProduits3">هل أنت راضٍ عن سياسة منح الخصومات لدينا؟</label><br>
+                <input type="radio" name="prixtProduits3" value="1"> 1 (غير راضٍ على الإطلاق)<br>
+                <input type="radio" name="prixtProduits3" value="2"> 2 (غير راضٍ قليلاً)<br>
+                <input type="radio" name="prixtProduits3" value="4"> 3 (راضٍ)<br>
+                <input type="radio" name="prixtProduits3" value="5"> 4 (راضٍ جداً)
+            </fieldset>
+            <Legend for="satisfactionProduits">نحن مستعدون لاستقبال مقترحاتكم، لأن رأيكم يهمنا؟</Legend>
+            <textarea id="propositions" name="propositions" rows="5"></textarea><br>
+
+            <h5>*لا تنسَ أن تحجب وتوقع على الاستبيان، وترسله لنا في أقرب وقت ممكن.</h5>
+
+            <br>
+
+        </form>
+
+        <br>
+        <button class="print-button" onclick="imprimerEtRediriger()">اطبع الاستبيان</button>
+    </div>
+    <script>
+        // الدالة للطباعة وإعادة التوجيه
+        function imprimerEtRediriger() {
+            // طباعة الاستبيان
+            window.print();
+
+            // قم بتغيير "URL_DE_REDIRECTION" بعنوان URL الذي تريد إعادة التوجيه إليه.
+            var urlDeRedirection = "https://diozars.github.io/questionnaire-bitumes/merci-a.html";
+            window.location.href = urlDeRedirection;
+        }
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>جميع الحقوق محفوظة &copy; 2023/2024 - Naftal spa</p>
+            <p>قسم قوة المبيعات</p>
+            <p>  الاتصال:  11 13 36 (+213) </p>
+        </div>
+    </footer>
+</body>
+</html>
