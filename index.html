@@ -146,6 +146,21 @@
             justify-content: center; /* Centrer verticalement */
             align-items: center; /* Centrer horizontalement */
             height: 100%; /* Prend toute la hauteur du conteneur parent */
+            animation: zoomIn 6s infinite alternate;
+        }
+        #message.hide {
+            animation: zoomOut 6s infinite alternate; /* Ajouter l'animation "zoomOut" */
+        }
+        @keyframes zoomIn {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.5; }
+        }
+
+        @keyframes zoomOut {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.5; }
         }
     </style>
 </head>
@@ -175,7 +190,7 @@
 
     </div>
 
-    <div id="message" style="pointer-events: none;">Naftal,Une relation de confiance</div>
+    <div id="message" style="pointer-events: none;">Naftal, Une relation de confiance</div>
     
 
     <script>
@@ -202,8 +217,13 @@
         }
 
         setInterval(() => {
+            const message = document.getElementById("message");
+            message.classList.add("hide");
+            setTimeout(() => {
+                message.classList.remove("hide");
+            }, 3000);
             changeSlide(1);
-        }, 3000);
+        }, 6000);
     </script>
 </body>
 
