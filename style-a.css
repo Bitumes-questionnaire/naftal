@@ -102,10 +102,12 @@ footer {
 }
 
 @media print {
-    .print-button {
+    .print-button,
+    .print-img {
         display: none;
     }
     footer {
         display: none;
     }
+
 }
