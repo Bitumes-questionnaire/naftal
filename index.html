@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil</title>
+    <title>Dpt-Force de vente</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,7 +27,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            z-index: 2; /* Amener le logo et les boutons au premier plan */
+            z-index: 2; 
         }
 
         #logo {
@@ -69,8 +69,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Couleur d'assombrissement (noir avec 50% d'opacité) */
-        z-index: 1; /* Le calque doit être au-dessus de l'image */
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1; 
         }
         .active {
             opacity: 1;
@@ -88,10 +88,10 @@
             bottom: 50px;
             left: 50%;
             transform: translateX(-50%);
-            display: inline-flex; /* Modification : Afficher les boutons côte à côte */
-            justify-content: center; /* Centrer horizontalement */
-            align-items: center; /* Centrer verticalement */
-            z-index: 2; /* Amener les boutons au premier plan */
+            display: inline-flex; 
+            justify-content: center; 
+            align-items: center; 
+            z-index: 2; 
         }
 
         .button {
@@ -105,11 +105,11 @@
             border-radius: 30px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s;
-            width: 200px; /* Définir une largeur fixe pour les boutons */
+            width: 200px; 
         }
 
         .button:hover {
-            background-color: #c1c400; /* Couleur de fond lors du survol */
+            background-color: #c1c400; 
             transform: scale(1.1);
         }
 
@@ -128,28 +128,28 @@
             margin-right: 5px;
         }
 
-        /* Style pour les flèches */
+        
         .arrow {
             font-size: 30px;
             cursor: pointer;
         }
 
-        /* Style pour le message animé */
+        
         #message {
             font-size: 24px;
             color: #ffffff;
             font-weight: bold;
             text-align: center;
-            z-index: 2; /* Amener le message au premier plan */
+            z-index: 2; 
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Centrer verticalement */
-            align-items: center; /* Centrer horizontalement */
-            height: 100%; /* Prend toute la hauteur du conteneur parent */
+            justify-content: center; 
+            align-items: center; 
+            height: 100%; 
             animation: zoomIn 6s infinite alternate;
         }
         #message.hide {
-            animation: zoomOut 6s infinite alternate; /* Ajouter l'animation "zoomOut" */
+            animation: zoomOut 6s infinite alternate; 
         }
         @keyframes zoomIn {
             0% { transform: scale(1); opacity: 0.5; }
