@@ -177,12 +177,9 @@
         <button class="print-button" onclick="imprimerEtRediriger()">اطبع الاستبيان</button>
     </div>
     <script>
-        // الدالة للطباعة وإعادة التوجيه
         function imprimerEtRediriger() {
-            // طباعة الاستبيان
             window.print();
 
-            // قم بتغيير "URL_DE_REDIRECTION" بعنوان URL الذي تريد إعادة التوجيه إليه.
             var urlDeRedirection = "./merci-a.html";
             window.location.href = urlDeRedirection;
         }
