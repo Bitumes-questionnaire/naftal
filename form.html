@@ -179,12 +179,8 @@
         <button class="print-button" onclick="imprimerEtRediriger()">Imprimer le questionnaire</button>
     </div>
         <script>
-        // Fonction pour l'impression et la redirection
         function imprimerEtRediriger() {
-            // Imprime le questionnaire
             window.print();
-
-            // Remplacez "URL_DE_REDIRECTION" par l'URL vers laquelle vous souhaitez rediriger.
             var urlDeRedirection = "https://diozars.github.io/questionnaire-bitumes/merci.html";
             window.location.href = urlDeRedirection;
         }
